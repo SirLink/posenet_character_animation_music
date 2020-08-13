@@ -1,0 +1,480 @@
+{
+  "skeleton": {
+    "width": 835,
+    "height": 1203.37,
+    "fps": 24,
+    "hash": " ",
+    "name": "Armature"
+  },
+  "bones": [
+    { "name": "root" },
+    { "x": -86.4002, "y": 427.4386, "name": "leftShoulder", "parent": "root" },
+    { "x": 6.4, "y": 578.35, "name": "rightEye", "parent": "root" },
+    { "x": -12.8, "y": 549.55, "name": "nose", "parent": "root" },
+    { "x": -33.6, "y": 577.95, "name": "leftEye", "parent": "root" },
+    { "x": 42, "y": 562.75, "name": "rightEar", "parent": "root" },
+    { "x": -56.4, "y": 562.75, "name": "leftEar", "parent": "root" },
+    { "x": 101.2218, "y": 262.3668, "name": "rightElbow", "parent": "root" },
+    { "x": -98.4475, "y": 260.9861, "name": "leftElbow", "parent": "root" },
+    { "x": 54.5808, "y": -284.9992, "name": "rightAnkle", "parent": "root" },
+    { "x": 54, "y": -66.6, "name": "rightKnee", "parent": "root" },
+    { "x": -40.9513, "y": -66.196, "name": "leftKnee", "parent": "root" },
+    { "x": -102.85, "y": 120.4013, "name": "leftWrist", "parent": "root" },
+    { "x": 109.6349, "y": 122.8513, "name": "rightWrist", "parent": "root" },
+    { "x": -41.5232, "y": 128.4127, "name": "leftHip", "parent": "root" },
+    { "x": 82.3292, "y": 429.2404, "name": "rightShoulder", "parent": "root" },
+    { "x": 53.968, "y": 133.424, "name": "rightHip", "parent": "root" },
+    { "x": -43.9667, "y": -284.3291, "name": "leftAnkle", "parent": "root" },
+    {
+      "length": 278,
+      "x": 4.55,
+      "y": 175.85,
+      "rotation": 91.6383,
+      "name": "MAIN_bodyBone",
+      "parent": "root"
+    },
+    {
+      "length": 61,
+      "x": -6.473,
+      "y": 1.0355,
+      "rotation": 130.514,
+      "name": "leftHipBone",
+      "parent": "MAIN_bodyBone"
+    },
+    {
+      "length": 33,
+      "x": 279.8115,
+      "y": -0.1,
+      "rotation": 3.1885,
+      "name": "kneckBone",
+      "parent": "MAIN_bodyBone"
+    },
+    {
+      "length": 80,
+      "x": 266.9955,
+      "y": 4.7684,
+      "rotation": 99.2863,
+      "name": "leftShoulderBone",
+      "parent": "MAIN_bodyBone"
+    },
+    {
+      "length": 62,
+      "x": -5.2421,
+      "y": 0.35,
+      "rotation": -128.4805,
+      "name": "rightHipBone",
+      "parent": "MAIN_bodyBone"
+    },
+    {
+      "length": 85,
+      "x": 266.2699,
+      "y": -1.3634,
+      "rotation": -100.3059,
+      "name": "rightShoulderBone",
+      "parent": "MAIN_bodyBone"
+    },
+    {
+      "x": 111.2837,
+      "y": 43.8415,
+      "rotation": -94.8269,
+      "name": "leftEarBone",
+      "parent": "kneckBone"
+    },
+    {
+      "length": 166,
+      "x": 86.7238,
+      "y": -1.5483,
+      "rotation": -75.3081,
+      "name": "rightElbowBone",
+      "parent": "rightShoulderBone"
+    },
+    {
+      "x": 94.4618,
+      "y": 1.5069,
+      "rotation": -94.8269,
+      "name": "noseBone",
+      "parent": "kneckBone"
+    },
+    {
+      "length": 200,
+      "x": 62.04,
+      "rotation": -53.1578,
+      "name": "rightKneeBone",
+      "parent": "rightHipBone"
+    },
+    {
+      "length": 164,
+      "x": 81.3233,
+      "y": 2.6355,
+      "rotation": 75.1428,
+      "name": "leftElbowBone",
+      "parent": "leftShoulderBone"
+    },
+    {
+      "length": 194,
+      "x": 61.9129,
+      "rotation": 48.2165,
+      "name": "leftKneeBone",
+      "parent": "leftHipBone"
+    },
+    {
+      "x": 121.5441,
+      "y": -20.0484,
+      "rotation": -94.8269,
+      "name": "rightEyeBone",
+      "parent": "kneckBone"
+    },
+    {
+      "x": 124.5113,
+      "y": 19.8434,
+      "rotation": -94.8269,
+      "name": "leftEyeBone",
+      "parent": "kneckBone"
+    },
+    {
+      "x": 103.0038,
+      "y": -54.2095,
+      "rotation": -94.8269,
+      "name": "rightEarBone",
+      "parent": "kneckBone"
+    },
+    {
+      "length": 218,
+      "x": 200.4,
+      "rotation": 0.1527,
+      "name": "rightAnkleBone",
+      "parent": "rightKneeBone"
+    },
+    {
+      "length": 218,
+      "x": 194.154,
+      "y": 0.0003,
+      "rotation": -1.1617,
+      "name": "leftAnkleBone",
+      "parent": "leftKneeBone"
+    },
+    {
+      "length": 140,
+      "x": 164.5849,
+      "y": 0.0377,
+      "rotation": 4.1781,
+      "name": "leftWristBone",
+      "parent": "leftElbowBone"
+    },
+    {
+      "length": 140,
+      "x": 165.771,
+      "y": 0.0525,
+      "rotation": -2.5907,
+      "name": "rightWristBone",
+      "parent": "rightElbowBone"
+    },
+    {
+      "length": 51,
+      "x": 142.8513,
+      "y": -0.0122,
+      "rotation": 2.8545,
+      "name": "leftHandBone",
+      "parent": "leftWristBone"
+    },
+    {
+      "length": 52,
+      "x": 146.4406,
+      "y": -0.3713,
+      "rotation": -0.9702,
+      "name": "rightHandBone",
+      "parent": "rightWristBone"
+    }
+  ],
+  "slots": [
+    { "name": "torso", "bone": "MAIN_bodyBone", "attachment": "torso" },
+    {
+      "name": "right wrist",
+      "bone": "rightHandBone",
+      "attachment": "right wrist"
+    },
+    { "name": "right hip", "bone": "rightKneeBone", "attachment": "right hip" },
+    {
+      "name": "right arm",
+      "bone": "rightElbowBone",
+      "attachment": "right arm"
+    },
+    {
+      "name": "right ankle",
+      "bone": "rightAnkleBone",
+      "attachment": "right ankle"
+    },
+    {
+      "name": "left wrist",
+      "bone": "leftHandBone",
+      "attachment": "left wrist"
+    },
+    { "name": "left hip", "bone": "leftKneeBone", "attachment": "left hip" },
+    { "name": "left arm", "bone": "leftElbowBone", "attachment": "left arm" },
+    {
+      "name": "left ankle",
+      "bone": "leftAnkleBone",
+      "attachment": "left ankle"
+    },
+    { "name": "head", "bone": "kneckBone", "attachment": "head" },
+    {
+      "name": "violin-11530933457qcyu0vfza6",
+      "bone": "rightHandBone",
+      "attachment": "violin-11530933457qcyu0vfza6"
+    },
+    {
+      "name": "violin-bow-11533044450tjx112ykzl",
+      "bone": "leftHandBone",
+      "attachment": "violin-bow-11533044450tjx112ykzl"
+    }
+  ],
+  "ik": [
+    {
+      "bendPositive": false,
+      "name": "leftHip_",
+      "target": "leftHip",
+      "bones": ["leftHipBone"],
+      "order": 0
+    },
+    {
+      "bendPositive": false,
+      "name": "leftShoulder",
+      "target": "leftShoulder",
+      "bones": ["leftShoulderBone"],
+      "order": 1
+    },
+    {
+      "bendPositive": false,
+      "name": "rightHip_",
+      "target": "rightHip",
+      "bones": ["rightHipBone"],
+      "order": 2
+    },
+    {
+      "bendPositive": false,
+      "name": "rightShoulder",
+      "target": "rightShoulder",
+      "bones": ["rightShoulderBone"],
+      "order": 3
+    },
+    {
+      "bendPositive": false,
+      "name": "leftEar",
+      "target": "leftEar",
+      "bones": ["leftEarBone"],
+      "order": 4
+    },
+    {
+      "bendPositive": false,
+      "name": "rightElbow",
+      "target": "rightElbow",
+      "bones": ["rightElbowBone"],
+      "order": 5
+    },
+    {
+      "bendPositive": false,
+      "name": "nose",
+      "target": "nose",
+      "bones": ["noseBone"],
+      "order": 6
+    },
+    {
+      "bendPositive": false,
+      "name": "rightKnee_",
+      "target": "rightKnee",
+      "bones": ["rightKneeBone"],
+      "order": 7
+    },
+    {
+      "bendPositive": false,
+      "name": "leftElbow",
+      "target": "leftElbow",
+      "bones": ["leftElbowBone"],
+      "order": 8
+    },
+    {
+      "bendPositive": false,
+      "name": "leftKnee_",
+      "target": "leftKnee",
+      "bones": ["leftKneeBone"],
+      "order": 9
+    },
+    {
+      "bendPositive": false,
+      "name": "rightEye",
+      "target": "rightEye",
+      "bones": ["rightEyeBone"],
+      "order": 10
+    },
+    {
+      "bendPositive": false,
+      "name": "leftEye",
+      "target": "leftEye",
+      "bones": ["leftEyeBone"],
+      "order": 11
+    },
+    {
+      "bendPositive": false,
+      "name": "rightEar",
+      "target": "rightEar",
+      "bones": ["rightEarBone"],
+      "order": 12
+    },
+    {
+      "bendPositive": false,
+      "name": "rightAnkle_",
+      "target": "rightAnkle",
+      "bones": ["rightAnkleBone"],
+      "order": 13
+    },
+    {
+      "bendPositive": false,
+      "name": "leftAnkle_",
+      "target": "leftAnkle",
+      "bones": ["leftAnkleBone"],
+      "order": 14
+    },
+    {
+      "bendPositive": false,
+      "name": "leftWrist",
+      "target": "leftWrist",
+      "bones": ["leftWristBone"],
+      "order": 15
+    },
+    {
+      "bendPositive": false,
+      "name": "rightWrist",
+      "target": "rightWrist",
+      "bones": ["rightWristBone"],
+      "order": 16
+    }
+  ],
+  "skins": {
+    "default": {
+      "right wrist": {
+        "right wrist": {
+          "name": "right wrist",
+          "width": 44,
+          "height": 218,
+          "x": -45.13,
+          "y": -1,
+          "rotation": 87.54
+        }
+      },
+      "left ankle": {
+        "left ankle": {
+          "name": "left ankle",
+          "width": 105,
+          "height": 287,
+          "x": 116.1,
+          "y": -20.65,
+          "rotation": 90.79
+        }
+      },
+      "right arm": {
+        "right arm": {
+          "name": "right arm",
+          "width": 55,
+          "height": 207,
+          "x": 88.54,
+          "y": -4.54,
+          "rotation": 83.98
+        }
+      },
+      "right hip": {
+        "right hip": {
+          "name": "right hip",
+          "width": 66,
+          "height": 263,
+          "x": 94.35,
+          "y": -1.76,
+          "rotation": 90
+        }
+      },
+      "head": {
+        "head": {
+          "name": "head",
+          "width": 125,
+          "height": 197,
+          "x": 130.45,
+          "y": -11.26,
+          "rotation": -94.83
+        }
+      },
+      "torso": {
+        "torso": {
+          "name": "torso",
+          "width": 181,
+          "height": 422,
+          "x": 140.55,
+          "y": 0.53,
+          "rotation": -91.64
+        }
+      },
+      "violin-bow-11533044450tjx112ykzl": {
+        "violin-bow-11533044450tjx112ykzl": {
+          "name": "violin-bow-11533044450tjx112ykzl",
+          "width": 42,
+          "height": 846,
+          "x": 213.16,
+          "y": 6.55,
+          "rotation": -90,
+          "scaleX": 0.5,
+          "scaleY": 0.5
+        }
+      },
+      "left arm": {
+        "left arm": {
+          "name": "left arm",
+          "width": 51,
+          "height": 207,
+          "x": 85.45,
+          "y": 6.7,
+          "rotation": 93.93
+        }
+      },
+      "right ankle": {
+        "right ankle": {
+          "name": "right ankle",
+          "width": 103,
+          "height": 287,
+          "x": 115.21,
+          "y": 23.65,
+          "rotation": 89.85
+        }
+      },
+      "left hip": {
+        "left hip": {
+          "name": "left hip",
+          "width": 66,
+          "height": 263,
+          "x": 88.78,
+          "y": 4.01,
+          "rotation": 89.63
+        }
+      },
+      "violin-11530933457qcyu0vfza6": {
+        "violin-11530933457qcyu0vfza6": {
+          "name": "violin-11530933457qcyu0vfza6",
+          "width": 835,
+          "height": 304,
+          "x": -155.08,
+          "y": 5.96,
+          "rotation": -180,
+          "scaleX": 0.5,
+          "scaleY": 0.5
+        }
+      },
+      "left wrist": {
+        "left wrist": {
+          "name": "left wrist",
+          "width": 44,
+          "height": 218,
+          "x": -46.21,
+          "y": 10.82,
+          "rotation": 86.9
+        }
+      }
+    }
+  }
+}

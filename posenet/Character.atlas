@@ -1,0 +1,90 @@
+
+Character.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+torso
+  rotate: false
+  xy: 838, 1
+  size: 181, 422
+  orig: 181, 422
+  offset: 0, 0
+  index: -1
+right wrist
+  rotate: false
+  xy: 106, 795
+  size: 44, 218
+  orig: 44, 218
+  offset: 0, 0
+  index: -1
+right hip
+  rotate: false
+  xy: 108, 307
+  size: 66, 263
+  orig: 66, 263
+  offset: 0, 0
+  index: -1
+right arm
+  rotate: false
+  xy: 244, 307
+  size: 55, 207
+  orig: 55, 207
+  offset: 0, 0
+  index: -1
+right ankle
+  rotate: false
+  xy: 1, 596
+  size: 103, 287
+  orig: 103, 287
+  offset: 0, 0
+  index: -1
+left wrist
+  rotate: false
+  xy: 152, 795
+  size: 44, 218
+  orig: 44, 218
+  offset: 0, 0
+  index: -1
+left hip
+  rotate: false
+  xy: 176, 307
+  size: 66, 263
+  orig: 66, 263
+  offset: 0, 0
+  index: -1
+left arm
+  rotate: false
+  xy: 301, 307
+  size: 51, 207
+  orig: 51, 207
+  offset: 0, 0
+  index: -1
+left ankle
+  rotate: false
+  xy: 1, 307
+  size: 105, 287
+  orig: 105, 287
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 106, 596
+  size: 125, 197
+  orig: 125, 197
+  offset: 0, 0
+  index: -1
+violin-11530933457qcyu0vfza6
+  rotate: false
+  xy: 1, 1
+  size: 835, 304
+  orig: 835, 304
+  offset: 0, 0
+  index: -1
+violin-bow-11533044450tjx112ykzl
+  rotate: false
+  xy: 1021, 1
+  size: 42, 846
+  orig: 42, 846
+  offset: 0, 0
+  index: -1
