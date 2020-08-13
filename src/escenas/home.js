@@ -14,11 +14,68 @@ export default class home extends Phaser.Scene {
     this.delta = 0;
     this.previuosValue = 0;
 
-    const player = new Tone.GrainPlayer(require("../assets/violin.mp3"), () => {
+    this.parts = [];
+
+    const violinTones = [
+      require("../assets/violin.mp3"),
+      require("../assets/violin_.mp3"),
+      require("../assets/violin___.mp3"),
+    ];
+    var player;
+
+    player = new Tone.GrainPlayer(violinTones[0], () => {
       player.volume.value = -1000;
       player.start();
     }).toDestination();
     player.loop = true;
+
+    this.add
+      .text(-100, -100, "Tone A")
+      .setColor(0xffffffff)
+      .setFontSize(100)
+      .setOrigin(0.5)
+      .setAlign("center")
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => {
+        if (player) player.stop();
+        player = new Tone.GrainPlayer(violinTones[0], () => {
+          player.volume.value = -1000;
+          player.start();
+        }).toDestination();
+        player.loop = true;
+      });
+    this.add
+      .text(-100, 0, "Tone B")
+      .setColor(0xffffffff)
+      .setFontSize(100)
+      .setOrigin(0.5)
+      .setAlign("center")
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => {
+        if (player) player.stop();
+
+        player = new Tone.GrainPlayer(violinTones[1], () => {
+          player.volume.value = -1000;
+          player.start();
+        }).toDestination();
+        player.loop = true;
+      });
+    this.add
+      .text(-100, 100, "Tone C")
+      .setColor(0xffffffff)
+      .setFontSize(100)
+      .setOrigin(0.5)
+      .setAlign("center")
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => {
+        if (player) player.stop();
+
+        player = new Tone.GrainPlayer(violinTones[2], () => {
+          player.volume.value = -1000;
+          player.start();
+        }).toDestination();
+        player.loop = true;
+      });
 
     this.character = this.add.spine(0, 0, "character");
 
@@ -78,23 +135,36 @@ export default class home extends Phaser.Scene {
           );
 
           poses[0].pose.keypoints.forEach((keypoint) => {
-            // console.log(keypoint);
             graphics.fillStyle(0xff0000, 1);
-            graphics.fillCircle(keypoint.position.x, keypoint.position.y, 10);
 
             if (keypoint.score < 0.2) return;
 
+            let part1 = keypoint;
+            let part0 =
+              this.parts.find((x) => x.part == keypoint.part) || part1;
+            let weight0 = part0.score / (part1.score + part0.score);
+            let weight1 = part1.score / (part1.score + part0.score);
+            graphics.fillCircle(
+              part1.position.x * weight1 + part0.position.x * weight0,
+              part1.position.y * weight1 + part0.position.y * weight0,
+              10
+            );
+
             let ik = this.character.skeleton.findIkConstraint(keypoint.part);
-            // console.log(ik);
             if (ik) {
               let position = new Phaser.Math.Vector2(
-                keypoint.position.x - this.character.x,
-                keypoint.position.y - this.character.y
+                (part1.position.x - this.character.x) * weight1 +
+                  (part0.position.x - this.character.x) * weight0,
+                (part1.position.y - this.character.y) * weight1 +
+                  (part0.position.y - this.character.y) * weight0
               );
+
               ik.target.x = -position.x;
               ik.target.y = -position.y;
             }
           });
+
+          this.parts = poses[0].pose.keypoints;
         });
       },
       false
