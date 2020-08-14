@@ -12,7 +12,7 @@ export default class home extends Phaser.Scene {
     let video = document.querySelector("#video");
 
     this.delta = 0;
-    this.previuosValue = 0;
+    this.previousValue = 0;
 
     this.parts = [];
 
@@ -175,18 +175,24 @@ export default class home extends Phaser.Scene {
       delay: 100,
       callback: () => {
         this.delta =
-          this.previuosValue -
+          this.previousValue -
           this.character.skeleton.findIkConstraint("leftWrist").target.x;
-        this.previuosValue = this.character.skeleton.findIkConstraint(
+        this.previousValue = this.character.skeleton.findIkConstraint(
           "leftWrist"
         ).target.x;
 
-        let value = Phaser.Math.Wrap(this.delta, 0, 500);
-        if (value == 0) {
-          player.volume.value = -1000;
+        let distance =
+          this.character.x -
+          this.character.skeleton.findIkConstraint("rightWrist").target.x;
+
+
+        let value = Phaser.Math.Wrap(this.delta, 0, 5);
+        if (this.delta <= 2 && this.delta >= -2) {
+          player.volume.value = -100;
         } else {
           player.volume.value = 1;
-          player.detune = this.delta;
+          player.detune = distance;
+          player.playbackRate = value;
         }
       },
     });
